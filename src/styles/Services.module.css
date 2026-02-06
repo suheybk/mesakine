@@ -1,0 +1,161 @@
+.pageWrapper {
+    padding-top: 80px;
+}
+
+.hero {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 5rem 0;
+}
+
+.heroTitle {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.card {
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-5px);
+    border-color: var(--color-secondary);
+}
+
+.iconWrapper {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.cardTitle {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.cardDesc {
+    color: var(--color-text-light);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.meta {
+    background-color: var(--color-surface);
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.detailBtn {
+    text-align: center;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0.8rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+.detailBtn:hover {
+    opacity: 0.9;
+}
+
+/* Table */
+.tableWrapper {
+    overflow-x: auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    padding: 2rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+.table th,
+.table td {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.table th:first-child,
+.table td:first-child {
+    text-align: left;
+    font-weight: 600;
+}
+
+.table th {
+    background-color: var(--color-surface);
+    color: var(--color-primary);
+    font-size: 1.1rem;
+}
+
+.check {
+    color: green;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.cross {
+    color: #ccc;
+    font-size: 1.2rem;
+}
+
+.ctaBanner {
+    padding: 4rem 0;
+    background-color: var(--color-primary);
+    color: white;
+    margin-top: 4rem;
+}
+
+.ctaBanner h3 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.ctaButtonOutline {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.ctaButtonOutline:hover {
+    background: white;
+    color: var(--color-primary);
+}

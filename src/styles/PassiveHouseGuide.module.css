@@ -1,0 +1,285 @@
+.pageWrapper {
+    padding-top: 80px;
+    /* Navbar height compensation */
+    background-color: #f9f9f9;
+}
+
+.hero {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+}
+
+.heroTitle {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.yearBadge {
+    background-color: var(--color-accent);
+    font-size: 1rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-left: 1rem;
+}
+
+.heroSubtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.breadcrumbs {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-bottom: 1.5rem;
+}
+
+.contentGrid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 3rem;
+    padding-bottom: 4rem;
+}
+
+.sidebar {
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+.toc {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+}
+
+.toc h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--color-secondary);
+    padding-bottom: 0.5rem;
+}
+
+.toc ul {
+    list-style: none;
+}
+
+.toc li {
+    margin-bottom: 0.8rem;
+}
+
+.toc a {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.toc a:hover {
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.sidebarCta {
+    margin-top: 2rem;
+    background-color: var(--color-secondary);
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.ctaButtonSmall {
+    background-color: var(--color-accent);
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.mainContent {
+    background: white;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+}
+
+.section {
+    margin-bottom: 4rem;
+    scroll-margin-top: 120px;
+    /* Offset for sticky header */
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+}
+
+.text {
+    line-height: 1.8;
+    color: var(--color-text);
+    margin-bottom: 1.5rem;
+}
+
+.infographicBox {
+    background-color: #eee;
+    height: 300px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.diagramPlaceholder {
+    color: #999;
+    font-weight: 600;
+}
+
+.featureList li {
+    margin-bottom: 0.5rem;
+    list-style-position: inside;
+}
+
+/* Principles Grid */
+.principlesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+}
+
+.principleCard {
+    background-color: var(--color-surface);
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.principleCard:hover {
+    transform: translateY(-5px);
+    background-color: var(--color-secondary);
+}
+
+.cardIndex {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    margin-bottom: 0.5rem;
+}
+
+/* Comparison Table */
+.comparisonTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.comparisonTable th,
+.comparisonTable td {
+    border: 1px solid #eee;
+    padding: 1rem;
+    text-align: center;
+}
+
+.comparisonTable th {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+/* Calculator */
+.calculator {
+    background-color: var(--color-surface);
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.rangeInput {
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+.resultsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.resultItem {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.resultItem.highlight {
+    border: 2px solid var(--color-accent);
+}
+
+.paybackNote {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--color-text-light);
+}
+
+/* FAQ */
+.faqItem {
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+}
+
+.faqItem summary {
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    /* Hide default triangle if wanted, or keep */
+    color: var(--color-primary);
+}
+
+.faqItem p {
+    margin-top: 0.5rem;
+    color: var(--color-text-light);
+}
+
+/* Final CTA */
+.finalCta {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 4rem 0;
+}
+
+.ctaButtonLarge {
+    background-color: var(--color-accent);
+    color: white;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 50px;
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 900px) {
+    .contentGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none;
+        /* Or move to bottom/accordion on mobile */
+    }
+
+    .resultsGrid {
+        grid-template-columns: 1fr;
+    }
+}

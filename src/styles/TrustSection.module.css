@@ -1,0 +1,44 @@
+.section {
+    padding: 2rem 0;
+    background-color: var(--color-surface);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-text-light);
+    font-size: 1.1rem;
+}
+
+.bold {
+    font-weight: 700;
+    color: var(--color-primary);
+    font-size: 1.2rem;
+}
+
+.divider {
+    width: 1px;
+    height: 30px;
+    background-color: #ddd;
+}
+
+@media (max-width: 600px) {
+    .divider {
+        display: none;
+    }
+
+    .grid {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

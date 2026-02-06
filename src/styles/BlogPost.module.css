@@ -1,0 +1,265 @@
+.pageWrapper {
+    padding-top: 80px;
+    background-color: white;
+    padding-bottom: 4rem;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    /* Content + Sidebar */
+    gap: 4rem;
+    max-width: 1000px;
+    /* Narrower container for reading */
+}
+
+.article {
+    max-width: 100%;
+}
+
+.backLink {
+    display: inline-block;
+    color: var(--color-text-light);
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.header {
+    margin-bottom: 2rem;
+}
+
+.categoryBadge {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    line-height: 1.2;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.author {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+.authorName {
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.postDate {
+    display: block;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.readTime {
+    color: var(--color-text-light);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.iconBtn {
+    background: none;
+    color: var(--color-text);
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background 0.2s;
+}
+
+.iconBtn:hover {
+    background-color: #f0f0f0;
+}
+
+.heroImage {
+    width: 100%;
+    height: 400px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+/* Content Typography */
+.contentBody {
+    line-height: 1.8;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.intro {
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+.contentBody h2 {
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: #111;
+}
+
+.contentBody p {
+    margin-bottom: 1.5rem;
+}
+
+.quote {
+    border-left: 4px solid var(--color-accent);
+    padding-left: 1.5rem;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--color-text-light);
+    margin: 2rem 0;
+}
+
+.midCta {
+    background-color: var(--color-surface);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.midCta h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.ctaBtn {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+/* Footer Section */
+.footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+}
+
+.tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.tags span {
+    background: #f0f0f0;
+    color: #666;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+.authorBio {
+    display: flex;
+    gap: 1.5rem;
+    background: var(--color-surface);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+}
+
+.avatarLarge {
+    width: 80px;
+    height: 80px;
+    background-color: #ddd;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.commentsHeading {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.commentBox {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    color: #888;
+}
+
+/* Sidebar */
+.stickyToc {
+    position: sticky;
+    top: 100px;
+}
+
+.stickyToc h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 1rem;
+}
+
+.stickyToc ul {
+    list-style: none;
+    border-left: 2px solid #eee;
+}
+
+.stickyToc li a {
+    display: block;
+    padding: 0.5rem 0 0.5rem 1rem;
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    transition: color 0.2s;
+    border-left: 2px solid transparent;
+    margin-left: -2px;
+}
+
+.stickyToc li a:hover {
+    color: var(--color-primary);
+    border-left-color: var(--color-primary);
+}
+
+@media (max-width: 900px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
