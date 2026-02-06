@@ -18,8 +18,8 @@ const FeasibilityService = () => {
                             <p className={styles.heroSubtitle}>Yatırımınızı yapmadan önce doğru kararı verin. Arsanızın potansiyelini keşfedin.</p>
                         </div>
                         {/* Placeholder for drawing user visual */}
-                        <div className={styles.heroVisual}>
-                            Mimari Çizim / Eskiz Görseli
+                        <div className={styles.heroVisual} style={{ overflow: 'hidden' }}>
+                            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop" alt="Architect Sketch" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                         </div>
                     </div>
                 </div>

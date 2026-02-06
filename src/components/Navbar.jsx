@@ -20,7 +20,9 @@ const Navbar = () => {
             <div className="container">
                 <div className={styles.navContent}>
                     <div className={styles.logo}>
-                        <a href="/">Mesakine</a>
+                        <a href="/">
+                            <img src="/images/branding-logo.svg" alt="Mesakine Logo" style={{ height: '40px' }} />
+                        </a>
                     </div>
 
                     <div className={`${styles.navLinks} ${isOpen ? styles.open : ''}`}>

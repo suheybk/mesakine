@@ -5,28 +5,34 @@ import styles from '../styles/ProjectsSlider.module.css';
 
 const projects = [
     {
-        title: 'Okka Evi',
-        category: 'Müstakil Konut',
-        desc: 'Türkiye\'nin ilk sertifikalı pasif evi. Yıllık ısıtma enerjisi ihtiyacı 14 kWh/m².',
-        imageColor: '#81C784', // Placeholder color
-        review: 'Mesakine ekibi ile çalışmak harikaydı. Evimizde konforu yılın her günü hissediyoruz.',
-        owner: 'Ahmet Y.'
+        id: 1,
+        title: "Bodrum Taş Ev Projesi",
+        category: "Müstakil Konut",
+        imageColor: "#8D6E63",
+        imageUrl: "https://images.unsplash.com/photo-1523217582562-09d0def993a6?q=80&w=800&auto=format&fit=crop",
+        desc: "Geleneksel mimariyle modern pasif ev standartlarının buluştuğu, yıllık 12 kWh/m² ısıtma enerjisi tüketen taş ev.",
+        review: "Yazın klima kullanmadan serin bir evde yaşamak inanılmaz. Mesakine ekibi her detayı düşündü.",
+        owner: "Canan & Mehmet T."
     },
     {
-        title: 'Yeşil Vadi Villaları',
-        category: 'Toplu Konut',
-        desc: '20 birimlik çevre dostu site projesi. Sıfır karbon hedefiyle tasarlandı.',
-        imageColor: '#64B5F6', // Placeholder color
-        review: 'Enerji faturalarımız inanılmaz düştü. Profesyonel danışmanlık hizmeti için teşekkürler.',
-        owner: 'Zeynep K.'
+        id: 2,
+        title: "Sapanca Göl Evi",
+        category: "Ahşap Yapı",
+        imageColor: "#5D4037",
+        imageUrl: "https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=800&auto=format&fit=crop",
+        desc: "Doğayla iç içe, kendi enerjisini üreten ve karbon nötr olarak tasarlanan ahşap karkas yapı.",
+        review: "Kışın en soğuk günlerinde bile evin sıcaklığı sabit. Enerji faturası derdimiz bitti.",
+        owner: "Ali Rıza B."
     },
     {
-        title: 'Güneş Kule',
-        category: 'Ticari',
-        desc: 'Ankara\'nın ilk pasif ofis binası projesi. Çalışan verimliliğini artıran iç hava kalitesi.',
-        imageColor: '#FFB74D', // Placeholder color
-        review: 'Ofisimizin havası değişti, resmen nefes alan bir binada çalışıyoruz.',
-        owner: 'Mehmet S.'
+        id: 3,
+        title: "Zekeriyaköy Modern Villa",
+        category: "Müstakil Konut",
+        imageColor: "#455A64",
+        imageUrl: "https://images.unsplash.com/photo-1600596542815-22b48533d3be?q=80&w=800&auto=format&fit=crop",
+        desc: "Minimalist tasarım, geniş cam yüzeyler ve maksimum konfor. Sertifikalı Premium Pasif Ev.",
+        review: "Hem estetik hem de teknik olarak kusursuz bir iş çıkardılar. Teşekkürler.",
+        owner: "Selin Y."
     }
 ];
 
@@ -61,9 +67,8 @@ const ProjectsSlider = () => {
                                 transition={{ duration: 0.5 }}
                                 className={styles.slideContent}
                             >
-                                <div className={styles.imageSide} style={{ backgroundColor: projects[current].imageColor }}>
-                                    {/* Placeholder for project image */}
-                                    <span className={styles.imagePlaceholderText}>{projects[current].title}</span>
+                                <div className={styles.imageSide}>
+                                    <img src={projects[current].imageUrl} alt={projects[current].title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                                 </div>
 
                                 <div className={styles.infoSide}>

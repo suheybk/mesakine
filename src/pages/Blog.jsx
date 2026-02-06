@@ -6,11 +6,11 @@ import styles from '../styles/Blog.module.css';
 const categories = ['Tasarım', 'Malzeme', 'Teknoloji', 'Yasal', 'Projeler', 'Maliyet', 'DIY'];
 
 const posts = [
-    { id: 1, title: 'Isı Geri Kazanım Cihazları Nasıl Çalışır?', category: 'Teknoloji', date: '28 Ocak 2026', author: 'Merve Demir', readTime: '5 dk', imageColor: '#90A4AE', desc: 'Mekanik havalandırma sistemlerinin (HRV/ERV) çalışma prensipleri ve pasif evlerdeki kritik rolü.' },
-    { id: 2, title: 'Türkiye\'de Enerji Kimlik Belgesi ve Yeni Yönetmelikler', category: 'Yasal', date: '15 Ocak 2026', author: 'Av. Can Yılmaz', readTime: '7 dk', imageColor: '#7986CB', desc: '2026 yılı itibariyle yürürlüğe giren yeni enerji verimliliği yasaları neleri değiştiriyor?' },
-    { id: 3, title: 'Pasif Ev Maliyetleri: 2026 Analizi', category: 'Maliyet', date: '02 Ocak 2026', author: 'Ahmet Y.', readTime: '6 dk', imageColor: '#81C784', desc: 'Malzeme fiyatları, işçilik ve uzun vadeli tasarruf projeksiyonları.' },
-    { id: 4, title: 'Yalıtım Malzemeleri Karşılaştırması', category: 'Malzeme', date: '20 Aralık 2025', author: 'Merve Demir', readTime: '8 dk', imageColor: '#FFCC80', desc: 'Taşyünü, EPS, XPS ve selüloz yalıtımın artıları ve eksileri.' },
-    { id: 5, title: 'Kendi Şantiyeni Yönetmek: DIY İpuçları', category: 'DIY', date: '10 Aralık 2025', author: 'Mehmet S.', readTime: '10 dk', imageColor: '#E0E0E0', desc: 'Kendi evini yapanlar için kritik kontrol noktaları.' }
+    { id: 1, title: 'Isı Geri Kazanım Cihazları Nasıl Çalışır?', category: 'Teknoloji', date: '28 Ocak 2026', author: 'Merve Demir', readTime: '5 dk', image: 'https://images.unsplash.com/photo-1581093458791-9f302e4d6b14?q=80&w=600&auto=format&fit=crop', desc: 'Mekanik havalandırma sistemlerinin (HRV/ERV) çalışma prensipleri ve pasif evlerdeki kritik rolü.' },
+    { id: 2, title: 'Türkiye\'de Enerji Kimlik Belgesi ve Yeni Yönetmelikler', category: 'Yasal', date: '15 Ocak 2026', author: 'Av. Can Yılmaz', readTime: '7 dk', image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=600&auto=format&fit=crop', desc: '2026 yılı itibariyle yürürlüğe giren yeni enerji verimliliği yasaları neleri değiştiriyor?' },
+    { id: 3, title: 'Pasif Ev Maliyetleri: 2026 Analizi', category: 'Maliyet', date: '02 Ocak 2026', author: 'Ahmet Y.', readTime: '6 dk', image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=600&auto=format&fit=crop', desc: 'Malzeme fiyatları, işçilik ve uzun vadeli tasarruf projeksiyonları.' },
+    { id: 4, title: 'Yalıtım Malzemeleri Karşılaştırması', category: 'Malzeme', date: '20 Aralık 2025', author: 'Merve Demir', readTime: '8 dk', image: 'https://images.unsplash.com/photo-1599696847853-3c43d993c50f?q=80&w=600&auto=format&fit=crop', desc: 'Taşyünü, EPS, XPS ve selüloz yalıtımın artıları ve eksileri.' },
+    { id: 5, title: 'Kendi Şantiyeni Yönetmek: DIY İpuçları', category: 'DIY', date: '10 Aralık 2025', author: 'Mehmet S.', readTime: '10 dk', image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=600&auto=format&fit=crop', desc: 'Kendi evini yapanlar için kritik kontrol noktaları.' }
 ];
 
 const Blog = () => {
@@ -39,8 +39,8 @@ const Blog = () => {
             <div className="container">
                 {/* Featured Post */}
                 <div className={styles.featuredPost}>
-                    <div className={styles.featuredImage} style={{ backgroundColor: '#A1887F' }}>
-                        Görsel Alanı
+                    <div className={styles.featuredImage}>
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop" alt="Featured Post" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                     </div>
                     <div className={styles.featuredContent}>
                         <span className={styles.badge}>Tasarım</span>
@@ -69,7 +69,9 @@ const Blog = () => {
                     <main className={styles.postsGrid}>
                         {posts.filter(p => p.title.toLowerCase().includes(searchTerm.toLowerCase())).map(post => (
                             <article key={post.id} className={styles.postCard}>
-                                <div className={styles.cardImage} style={{ backgroundColor: post.imageColor }}></div>
+                                <div className={styles.cardImage}>
+                                    <img src={post.image} alt={post.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                </div>
                                 <div className={styles.cardContent}>
                                     <div className={styles.cardHeader}>
                                         <span className={styles.cardBadge}>{post.category}</span>
