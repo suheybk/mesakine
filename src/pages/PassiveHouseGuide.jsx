@@ -59,7 +59,7 @@ const PassiveHouseGuide = () => {
                     <section id="definition" className={styles.section}>
                         <h2>Pasif Ev Nedir?</h2>
                         <div className={styles.infographicBox} style={{ background: 'white', border: '1px solid #eee' }}>
-                            <img src="/images/passive-house-diagram.svg" alt="Pasif Ev Diyagramı" style={{ width: '100%', maxHeight: '400px' }} />
+                            <img src="/images/pasif-ev-dagram.png" alt="Pasif Ev Diyagramı" style={{ width: '100%', maxHeight: '400px', objectFit: 'contain' }} />
                         </div>
                         <p className={styles.text}>
                             Pasif Ev (Passive House), dünyadaki en yüksek enerji verimliliği standartlarından biridir.

@@ -37,10 +37,7 @@ const WhyPassiveHouse = () => {
 
                 <div className={styles.grid}>
                     <div className={styles.imageWrapper}>
-                        {/* Visual representation/Illustration placeholder */}
-                        <div className={styles.placeholderImage}>
-                            <span className={styles.imageText}>Pasif Ev Diyagramı</span>
-                        </div>
+                        <img src="/images/pasif-ev-gorsel2.png" alt="Neden Pasif Ev" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '10px' }} />
                     </div>
                     <div className={styles.benefitsList}>
                         {benefits.map((benefit, index) => (
